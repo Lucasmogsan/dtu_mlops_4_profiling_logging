@@ -1,0 +1,24 @@
+Start training VAE...
+0
+100
+200
+300
+400
+500
+	Epoch 1 complete! 	Average Loss:  156.96785051909433
+0
+100
+200
+300
+400
+500
+	Epoch 2 complete! 	Average Loss:  119.13964483448977
+0
+100
+200
+300
+400
+500
+	Epoch 3 complete! 	Average Loss:  113.27642868322204
+Finish!!
+0

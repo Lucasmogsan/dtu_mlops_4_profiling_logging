@@ -1,0 +1,88 @@
+{
+    "os": "Linux-6.2.0-39-generic-x86_64-with-glibc2.35",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-01-05T14:40:38.103043",
+    "startedAt": "2024-01-05T14:40:37.321496",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/lucas/dtu_mlops_4_profiling_logging/vae_mnist_wandb.py",
+    "codePathLocal": "vae_mnist_wandb.py",
+    "codePath": "vae_mnist_wandb.py",
+    "git": {
+        "remote": "https://github.com/Lucasmogsan/dtu_mlops_4_profiling_logging.git",
+        "commit": "f151e3d813523523ec2019fcbdf01e42654a940d"
+    },
+    "email": "lucassandby@gmail.com",
+    "root": "/home/lucas/dtu_mlops_4_profiling_logging",
+    "host": "lucas-ThinkPad-P53s",
+    "username": "lucas",
+    "executable": "/home/lucas/miniconda3/envs/my_env/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 900.01875,
+        "min": 400.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 900.136,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2000.0,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 899.935,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 899.998,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 900.03,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 898.993,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 899.952,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 899.878,
+            "min": 400.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 83.68163299560547,
+            "used": 58.5337028503418
+        }
+    },
+    "gpu": "Quadro P520",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro P520",
+            "memory_total": 2099904512
+        }
+    ],
+    "memory": {
+        "total": 15.364974975585938
+    }
+}

@@ -1,0 +1,789 @@
+2024-01-05 15:32:23,498 INFO    StreamThr :181104 [internal.py:wandb_internal():86] W&B internal server running at pid: 181104, started at: 2024-01-05 15:32:23.497535
+2024-01-05 15:32:23,499 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status
+2024-01-05 15:32:23,502 INFO    WriterThread:181104 [datastore.py:open_for_write():85] open: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/run-7764xou0.wandb
+2024-01-05 15:32:23,503 DEBUG   SenderThread:181104 [sender.py:send():382] send: header
+2024-01-05 15:32:23,505 DEBUG   SenderThread:181104 [sender.py:send():382] send: run
+2024-01-05 15:32:23,979 INFO    SenderThread:181104 [dir_watcher.py:__init__():211] watching files in: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files
+2024-01-05 15:32:23,980 INFO    SenderThread:181104 [sender.py:_start_run_threads():1136] run started: 7764xou0 with start time 1704465143.497209
+2024-01-05 15:32:23,996 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: check_version
+2024-01-05 15:32:23,997 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: check_version
+2024-01-05 15:32:24,104 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: run_start
+2024-01-05 15:32:24,107 DEBUG   HandlerThread:181104 [system_info.py:__init__():32] System info init
+2024-01-05 15:32:24,107 DEBUG   HandlerThread:181104 [system_info.py:__init__():47] System info init done
+2024-01-05 15:32:24,107 INFO    HandlerThread:181104 [system_monitor.py:start():194] Starting system monitor
+2024-01-05 15:32:24,107 INFO    SystemMonitor:181104 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-05 15:32:24,108 INFO    HandlerThread:181104 [system_monitor.py:probe():214] Collecting system info
+2024-01-05 15:32:24,108 INFO    SystemMonitor:181104 [interfaces.py:start():190] Started cpu monitoring
+2024-01-05 15:32:24,109 INFO    SystemMonitor:181104 [interfaces.py:start():190] Started disk monitoring
+2024-01-05 15:32:24,110 INFO    SystemMonitor:181104 [interfaces.py:start():190] Started gpu monitoring
+2024-01-05 15:32:24,111 INFO    SystemMonitor:181104 [interfaces.py:start():190] Started memory monitoring
+2024-01-05 15:32:24,111 INFO    SystemMonitor:181104 [interfaces.py:start():190] Started network monitoring
+2024-01-05 15:32:24,116 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:24,116 DEBUG   HandlerThread:181104 [system_info.py:probe():196] Probing system
+2024-01-05 15:32:24,116 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:24,118 DEBUG   HandlerThread:181104 [system_info.py:_probe_git():181] Probing git
+2024-01-05 15:32:24,123 DEBUG   HandlerThread:181104 [system_info.py:_probe_git():189] Probing git done
+2024-01-05 15:32:24,123 DEBUG   HandlerThread:181104 [system_info.py:probe():244] Probing system done
+2024-01-05 15:32:24,123 DEBUG   HandlerThread:181104 [system_monitor.py:probe():223] {'os': 'Linux-6.2.0-39-generic-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2024-01-05T14:32:24.116968', 'startedAt': '2024-01-05T14:32:23.492651', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/lucas/dtu_mlops_4_profiling_logging/vae_mnist_wandb.py', 'codePathLocal': 'vae_mnist_wandb.py', 'codePath': 'vae_mnist_wandb.py', 'git': {'remote': 'https://github.com/Lucasmogsan/dtu_mlops_4_profiling_logging.git', 'commit': 'f151e3d813523523ec2019fcbdf01e42654a940d'}, 'email': 'lucassandby@gmail.com', 'root': '/home/lucas/dtu_mlops_4_profiling_logging', 'host': 'lucas-ThinkPad-P53s', 'username': 'lucas', 'executable': '/home/lucas/miniconda3/envs/my_env/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2573.3085, 'min': 400.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 2899.975, 'min': 400.0, 'max': 4600.0}, {'current': 2900.022, 'min': 400.0, 'max': 4600.0}, {'current': 2899.993, 'min': 400.0, 'max': 4600.0}, {'current': 2900.023, 'min': 400.0, 'max': 4600.0}, {'current': 2390.627, 'min': 400.0, 'max': 4600.0}, {'current': 2899.878, 'min': 400.0, 'max': 4600.0}, {'current': 2900.002, 'min': 400.0, 'max': 4600.0}, {'current': 2900.209, 'min': 400.0, 'max': 4600.0}], 'disk': {'/': {'total': 83.68163299560547, 'used': 58.538063049316406}}, 'gpu': 'Quadro P520', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro P520', 'memory_total': 2099904512}], 'memory': {'total': 15.364974975585938}}
+2024-01-05 15:32:24,124 INFO    HandlerThread:181104 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-05 15:32:24,124 INFO    HandlerThread:181104 [system_monitor.py:probe():227] Publishing system info
+2024-01-05 15:32:24,124 DEBUG   HandlerThread:181104 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-05 15:32:24,124 DEBUG   HandlerThread:181104 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-05 15:32:24,124 DEBUG   HandlerThread:181104 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-01-05 15:32:24,980 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/requirements.txt
+2024-01-05 15:32:24,980 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/conda-environment.yaml
+2024-01-05 15:32:26,117 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:26,117 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:26,980 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/conda-environment.yaml
+2024-01-05 15:32:27,095 DEBUG   HandlerThread:181104 [system_info.py:_save_conda():87] Saving conda packages done
+2024-01-05 15:32:27,095 INFO    HandlerThread:181104 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-05 15:32:27,100 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:27,100 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-01-05 15:32:27,107 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-05 15:32:27,108 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: stop_status
+2024-01-05 15:32:27,110 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-05 15:32:27,436 DEBUG   SenderThread:181104 [sender.py:send():382] send: telemetry
+2024-01-05 15:32:27,437 DEBUG   SenderThread:181104 [sender.py:send():382] send: telemetry
+2024-01-05 15:32:27,842 INFO    wandb-upload_0:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/h7o0roqk-wandb-metadata.json
+2024-01-05 15:32:27,980 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:27,980 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-metadata.json
+2024-01-05 15:32:28,118 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:28,119 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:29,098 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,101 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,101 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,102 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,102 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,103 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,103 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,104 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,104 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,106 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,120 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:29,126 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:29,130 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:29,131 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:29,134 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:29,981 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:29,981 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:30,120 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:30,120 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:30,890 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,892 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,892 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,893 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,893 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,894 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,894 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,894 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,895 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,897 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,916 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:30,926 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:30,928 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:30,929 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:30,982 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:31,982 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:32,121 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:32,121 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:32,402 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,404 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,405 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,405 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,405 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,406 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,406 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,407 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,407 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,409 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,428 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:32,431 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:32,432 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:32,434 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:32,982 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:33,901 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,903 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,903 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,904 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,904 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,905 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,905 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,905 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,906 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,908 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,926 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:33,935 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:33,936 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:33,938 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:33,983 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:33,983 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:34,122 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:34,122 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:34,938 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:35,465 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,467 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,468 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,468 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,469 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,469 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,470 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,470 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,471 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,473 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,492 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:35,495 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:35,496 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:35,498 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:35,983 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:35,984 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:36,123 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:36,123 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:36,992 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,993 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,994 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,994 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,995 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,995 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,995 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,996 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,996 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:36,998 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:37,984 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:38,124 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:38,124 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:38,522 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,524 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,524 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,524 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,525 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,525 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,525 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,526 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,526 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,528 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,547 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:38,556 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:38,557 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:38,558 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:38,984 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:39,985 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:39,999 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,000 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,001 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,001 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,001 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,002 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,002 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,003 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,003 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,005 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,017 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:40,024 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:40,027 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:40,028 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:40,029 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:40,125 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:40,126 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:40,985 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:41,533 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,535 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,536 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,536 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,537 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,537 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,537 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,538 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,538 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,540 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,559 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:41,569 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:41,570 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:41,572 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:41,986 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:41,986 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:42,107 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-05 15:32:42,108 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: stop_status
+2024-01-05 15:32:42,108 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-05 15:32:42,127 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:42,127 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:43,020 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,063 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,064 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,064 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,064 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,064 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,064 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,065 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,065 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,065 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,065 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:43,068 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:43,069 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:43,071 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:43,986 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:43,986 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:44,128 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:44,128 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:44,505 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,507 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,507 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,508 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,508 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,509 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,509 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,510 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,510 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,512 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,530 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:44,540 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:44,542 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:44,544 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:44,986 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:45,545 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:45,987 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:46,033 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,035 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,036 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,036 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,037 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,037 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,037 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,038 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,038 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,040 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:46,129 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:46,129 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:47,552 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,554 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,554 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,555 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,555 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,555 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,556 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,556 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,557 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,558 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,577 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:47,617 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:47,618 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:47,620 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:47,988 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:47,988 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:48,130 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:48,130 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:49,040 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,041 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,042 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,042 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,043 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,043 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,043 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,044 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,044 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,046 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,064 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:49,067 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:49,069 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:49,071 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:49,988 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:49,988 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:50,131 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:50,131 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:50,539 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,540 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,541 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,541 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,542 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,542 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,543 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,543 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,544 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,545 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,558 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:50,564 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:50,575 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:50,576 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:50,578 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:50,988 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:51,989 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:52,073 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,074 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,075 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,075 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,076 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,076 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,077 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,077 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,078 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,079 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,098 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:52,102 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:52,103 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:52,104 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:52,133 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:52,133 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:52,989 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:53,559 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,561 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,561 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,562 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,562 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,563 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,563 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,564 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,564 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,566 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,584 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:53,595 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:53,597 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:53,599 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:53,990 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:53,990 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:54,185 ERROR   gpu       :181104 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-01-05 15:32:54,187 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:54,187 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:55,065 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,067 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,067 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,068 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,068 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,069 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,069 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,069 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,070 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,072 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,706 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,707 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_a19ce0528b1bb2adce22.png with policy now
+2024-01-05 15:32:55,713 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:55,807 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:55,985 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,986 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_6e9cd629d6460d28e805.png with policy now
+2024-01-05 15:32:55,986 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,986 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_f659a229c23d487b5c9c.png with policy now
+2024-01-05 15:32:55,986 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,986 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_de352845fd202b43e1ae.png with policy now
+2024-01-05 15:32:55,986 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,986 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_4daa51686e7c528d0e3e.png with policy now
+2024-01-05 15:32:55,987 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,987 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_d9e6918425be5a764038.png with policy now
+2024-01-05 15:32:55,988 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,989 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_ffb2c8628e4252b4915f.png with policy now
+2024-01-05 15:32:55,989 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,989 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_d6119a004a4a6ba7dfba.png with policy now
+2024-01-05 15:32:55,989 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,989 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_b85b026dac3aa4ebd4f1.png with policy now
+2024-01-05 15:32:55,992 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,992 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_68d4407f1ee77983e6f9.png with policy now
+2024-01-05 15:32:55,993 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,993 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_ddba36420163acae2115.png with policy now
+2024-01-05 15:32:55,993 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,993 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_6264129da1c12245516a.png with policy now
+2024-01-05 15:32:55,996 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,996 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_cf2a546bcb2ce04e9c27.png with policy now
+2024-01-05 15:32:55,996 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,996 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_35194f59a5d73c127b7c.png with policy now
+2024-01-05 15:32:55,996 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:55,996 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/config.yaml
+2024-01-05 15:32:55,998 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_ddba36420163acae2115.png
+2024-01-05 15:32:55,998 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:55,999 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/original_15_9c1d34e1772c67cdf331.png with policy now
+2024-01-05 15:32:55,999 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_cf2a546bcb2ce04e9c27.png
+2024-01-05 15:32:55,999 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_b85b026dac3aa4ebd4f1.png
+2024-01-05 15:32:55,999 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:56,000 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:56,000 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_de352845fd202b43e1ae.png
+2024-01-05 15:32:56,003 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_ffb2c8628e4252b4915f.png
+2024-01-05 15:32:56,003 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:56,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_4daa51686e7c528d0e3e.png
+2024-01-05 15:32:56,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_35194f59a5d73c127b7c.png
+2024-01-05 15:32:56,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_a19ce0528b1bb2adce22.png
+2024-01-05 15:32:56,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_9c1d34e1772c67cdf331.png
+2024-01-05 15:32:56,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_68d4407f1ee77983e6f9.png
+2024-01-05 15:32:56,005 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_6264129da1c12245516a.png
+2024-01-05 15:32:56,005 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_d6119a004a4a6ba7dfba.png
+2024-01-05 15:32:56,007 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_f659a229c23d487b5c9c.png
+2024-01-05 15:32:56,007 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_6e9cd629d6460d28e805.png
+2024-01-05 15:32:56,008 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_d9e6918425be5a764038.png
+2024-01-05 15:32:56,008 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media
+2024-01-05 15:32:56,008 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images
+2024-01-05 15:32:56,052 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,052 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_6d87d6297c4b94e9c124.png with policy now
+2024-01-05 15:32:56,052 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,052 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_744989fece19b15a6ca4.png with policy now
+2024-01-05 15:32:56,057 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,057 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_ca4f7c7e9e1bb7d46554.png with policy now
+2024-01-05 15:32:56,062 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,062 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_993618f6ee4e83d9acfb.png with policy now
+2024-01-05 15:32:56,066 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,066 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_61f362d5a68cae3fdfcf.png with policy now
+2024-01-05 15:32:56,067 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,067 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_43c23a2a85388c3b2200.png with policy now
+2024-01-05 15:32:56,073 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,073 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_5725e18d5cfc79d86b40.png with policy now
+2024-01-05 15:32:56,076 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,076 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_790e39619f8a04e99191.png with policy now
+2024-01-05 15:32:56,079 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,079 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_ae3160149d54ba0bf669.png with policy now
+2024-01-05 15:32:56,084 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,084 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_4663d423d7b63d2c475f.png with policy now
+2024-01-05 15:32:56,085 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,085 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_37ca756836ec6553205f.png with policy now
+2024-01-05 15:32:56,093 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,093 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_8ef82a746fcf8c262e9f.png with policy now
+2024-01-05 15:32:56,097 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,097 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_d183fa16899ecd44cd97.png with policy now
+2024-01-05 15:32:56,099 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,100 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_78be8e05dc577136d553.png with policy now
+2024-01-05 15:32:56,102 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,103 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/reconstructed_16_30b89b3c42d8315b86b3.png with policy now
+2024-01-05 15:32:56,148 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:56,149 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:56,149 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:56,150 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:56,188 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:56,188 ERROR   gpu       :181104 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-05 15:32:56,285 INFO    wandb-upload_0:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/davvekhb-media/images/original_15_a19ce0528b1bb2adce22.png
+2024-01-05 15:32:56,466 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,466 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_5ddb7177b49db7b98cab.png with policy now
+2024-01-05 15:32:56,470 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,470 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_9e21c14a246db2c94666.png with policy now
+2024-01-05 15:32:56,472 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,472 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_66d3b443b8e8e6cb77ad.png with policy now
+2024-01-05 15:32:56,474 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,474 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_d3f30ed9092a53a8e4c3.png with policy now
+2024-01-05 15:32:56,477 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,477 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_e660efc1ee4f57983683.png with policy now
+2024-01-05 15:32:56,478 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,479 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_792e5b2155a4f2208f03.png with policy now
+2024-01-05 15:32:56,480 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,481 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_7ac1eb6f3209cbb6c47f.png with policy now
+2024-01-05 15:32:56,483 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,483 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_a235d3989255efb38e29.png with policy now
+2024-01-05 15:32:56,485 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,485 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_aac0bf4635419285aac3.png with policy now
+2024-01-05 15:32:56,487 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,487 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_e9cc9eabae5c451e3b38.png with policy now
+2024-01-05 15:32:56,489 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,489 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_4257f9e333dc978e7819.png with policy now
+2024-01-05 15:32:56,491 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,491 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_2230818706f4b2b78c58.png with policy now
+2024-01-05 15:32:56,493 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,493 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_f4e3c27f2ead1bd19906.png with policy now
+2024-01-05 15:32:56,496 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,496 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_7d490cfe8cccad2101bf.png with policy now
+2024-01-05 15:32:56,498 DEBUG   SenderThread:181104 [sender.py:send():382] send: files
+2024-01-05 15:32:56,498 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file media/images/generated_17_92762c805896b95dce03.png with policy now
+2024-01-05 15:32:56,536 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-05 15:32:56,536 DEBUG   SenderThread:181104 [sender.py:send():382] send: history
+2024-01-05 15:32:56,537 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: summary_record
+2024-01-05 15:32:56,538 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:56,538 DEBUG   SenderThread:181104 [sender.py:send():382] send: exit
+2024-01-05 15:32:56,538 INFO    SenderThread:181104 [sender.py:send_exit():589] handling exit code: 0
+2024-01-05 15:32:56,538 INFO    SenderThread:181104 [sender.py:send_exit():591] handling runtime: 32
+2024-01-05 15:32:56,543 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:56,543 INFO    SenderThread:181104 [sender.py:send_exit():597] send defer
+2024-01-05 15:32:56,543 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,543 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-05 15:32:56,544 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,544 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-05 15:32:56,544 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 1
+2024-01-05 15:32:56,544 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,544 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-05 15:32:56,544 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,544 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-05 15:32:56,544 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 2
+2024-01-05 15:32:56,544 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,544 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-05 15:32:56,544 INFO    HandlerThread:181104 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-05 15:32:56,544 DEBUG   SystemMonitor:181104 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-05 15:32:56,545 INFO    HandlerThread:181104 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-05 15:32:56,545 DEBUG   SystemMonitor:181104 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-05 15:32:56,545 DEBUG   SystemMonitor:181104 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-05 15:32:56,546 INFO    HandlerThread:181104 [interfaces.py:finish():202] Joined disk monitor
+2024-01-05 15:32:56,571 ERROR   gpu       :181104 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-01-05 15:32:56,572 INFO    HandlerThread:181104 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-05 15:32:56,572 INFO    HandlerThread:181104 [interfaces.py:finish():202] Joined memory monitor
+2024-01-05 15:32:56,572 INFO    HandlerThread:181104 [interfaces.py:finish():202] Joined network monitor
+2024-01-05 15:32:56,572 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,572 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-05 15:32:56,572 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 3
+2024-01-05 15:32:56,572 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,572 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-05 15:32:56,574 DEBUG   SenderThread:181104 [sender.py:send():382] send: stats
+2024-01-05 15:32:56,574 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,574 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-05 15:32:56,574 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 4
+2024-01-05 15:32:56,574 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,574 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-05 15:32:56,575 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,575 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-05 15:32:56,575 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 5
+2024-01-05 15:32:56,575 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,575 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-05 15:32:56,576 DEBUG   SenderThread:181104 [sender.py:send():382] send: summary
+2024-01-05 15:32:56,577 INFO    SenderThread:181104 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-05 15:32:56,577 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,577 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-05 15:32:56,577 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 6
+2024-01-05 15:32:56,577 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,577 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-05 15:32:56,577 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,577 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-05 15:32:56,577 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 7
+2024-01-05 15:32:56,577 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: status_report
+2024-01-05 15:32:56,577 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:56,577 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-05 15:32:56,578 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:56,578 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-05 15:32:56,623 INFO    wandb-upload_1:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/t308zk4q-media/images/original_15_6e9cd629d6460d28e805.png
+2024-01-05 15:32:56,632 INFO    wandb-upload_12:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/moipqa27-media/images/original_15_cf2a546bcb2ce04e9c27.png
+2024-01-05 15:32:56,647 INFO    wandb-upload_7:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/pxsvc670-media/images/original_15_d6119a004a4a6ba7dfba.png
+2024-01-05 15:32:56,661 INFO    wandb-upload_2:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/vxzcrlrg-media/images/original_15_f659a229c23d487b5c9c.png
+2024-01-05 15:32:56,675 INFO    wandb-upload_5:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/koj8ee8m-media/images/original_15_d9e6918425be5a764038.png
+2024-01-05 15:32:56,699 INFO    wandb-upload_8:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/1hoa6vgy-media/images/original_15_b85b026dac3aa4ebd4f1.png
+2024-01-05 15:32:56,707 INFO    wandb-upload_10:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/c0jkrnpd-media/images/original_15_ddba36420163acae2115.png
+2024-01-05 15:32:56,717 INFO    wandb-upload_3:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/fae7lxev-media/images/original_15_de352845fd202b43e1ae.png
+2024-01-05 15:32:56,731 INFO    wandb-upload_9:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/zx95fp95-media/images/original_15_68d4407f1ee77983e6f9.png
+2024-01-05 15:32:56,749 INFO    wandb-upload_11:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/pzajm9sx-media/images/original_15_6264129da1c12245516a.png
+2024-01-05 15:32:56,750 INFO    wandb-upload_4:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/wmks03uq-media/images/original_15_4daa51686e7c528d0e3e.png
+2024-01-05 15:32:56,761 INFO    wandb-upload_14:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/d5s1dt34-media/images/original_15_9c1d34e1772c67cdf331.png
+2024-01-05 15:32:56,777 INFO    wandb-upload_6:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/hxnwg0x0-media/images/original_15_ffb2c8628e4252b4915f.png
+2024-01-05 15:32:56,778 INFO    wandb-upload_16:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/0zukqdux-media/images/reconstructed_16_744989fece19b15a6ca4.png
+2024-01-05 15:32:56,779 INFO    wandb-upload_13:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/p15cvaaw-media/images/original_15_35194f59a5d73c127b7c.png
+2024-01-05 15:32:56,793 INFO    wandb-upload_18:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/8eu65euy-media/images/reconstructed_16_993618f6ee4e83d9acfb.png
+2024-01-05 15:32:56,806 INFO    wandb-upload_21:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/q4px4pwk-media/images/reconstructed_16_5725e18d5cfc79d86b40.png
+2024-01-05 15:32:56,812 INFO    wandb-upload_23:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/0cds7rhk-media/images/reconstructed_16_ae3160149d54ba0bf669.png
+2024-01-05 15:32:56,821 INFO    wandb-upload_24:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/0fj1w67v-media/images/reconstructed_16_4663d423d7b63d2c475f.png
+2024-01-05 15:32:56,859 INFO    wandb-upload_25:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/qxfk3ymt-media/images/reconstructed_16_37ca756836ec6553205f.png
+2024-01-05 15:32:56,863 INFO    wandb-upload_15:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/wk0cps9i-media/images/reconstructed_16_6d87d6297c4b94e9c124.png
+2024-01-05 15:32:56,870 INFO    wandb-upload_17:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/zsgl7gs2-media/images/reconstructed_16_ca4f7c7e9e1bb7d46554.png
+2024-01-05 15:32:56,872 INFO    wandb-upload_29:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/638f7yl7-media/images/reconstructed_16_30b89b3c42d8315b86b3.png
+2024-01-05 15:32:56,880 INFO    wandb-upload_19:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/jfws6j6d-media/images/reconstructed_16_61f362d5a68cae3fdfcf.png
+2024-01-05 15:32:56,899 INFO    wandb-upload_22:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/kz8z5q69-media/images/reconstructed_16_790e39619f8a04e99191.png
+2024-01-05 15:32:56,905 INFO    wandb-upload_26:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/89m7q2io-media/images/reconstructed_16_8ef82a746fcf8c262e9f.png
+2024-01-05 15:32:56,908 INFO    wandb-upload_28:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/fkk2dt6c-media/images/reconstructed_16_78be8e05dc577136d553.png
+2024-01-05 15:32:56,918 INFO    wandb-upload_27:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/tlaw5ee5-media/images/reconstructed_16_d183fa16899ecd44cd97.png
+2024-01-05 15:32:56,945 INFO    wandb-upload_20:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/i4k7qzrl-media/images/reconstructed_16_43c23a2a85388c3b2200.png
+2024-01-05 15:32:56,999 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:56,999 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_5725e18d5cfc79d86b40.png
+2024-01-05 15:32:57,000 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_e9cc9eabae5c451e3b38.png
+2024-01-05 15:32:57,000 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_78be8e05dc577136d553.png
+2024-01-05 15:32:57,000 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_9e21c14a246db2c94666.png
+2024-01-05 15:32:57,001 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_8ef82a746fcf8c262e9f.png
+2024-01-05 15:32:57,001 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_744989fece19b15a6ca4.png
+2024-01-05 15:32:57,002 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_92762c805896b95dce03.png
+2024-01-05 15:32:57,002 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_792e5b2155a4f2208f03.png
+2024-01-05 15:32:57,003 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_f4e3c27f2ead1bd19906.png
+2024-01-05 15:32:57,003 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_d3f30ed9092a53a8e4c3.png
+2024-01-05 15:32:57,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_6d87d6297c4b94e9c124.png
+2024-01-05 15:32:57,004 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_7ac1eb6f3209cbb6c47f.png
+2024-01-05 15:32:57,005 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_ae3160149d54ba0bf669.png
+2024-01-05 15:32:57,005 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_66d3b443b8e8e6cb77ad.png
+2024-01-05 15:32:57,006 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_a235d3989255efb38e29.png
+2024-01-05 15:32:57,010 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_ca4f7c7e9e1bb7d46554.png
+2024-01-05 15:32:57,011 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_37ca756836ec6553205f.png
+2024-01-05 15:32:57,011 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_7d490cfe8cccad2101bf.png
+2024-01-05 15:32:57,012 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_61f362d5a68cae3fdfcf.png
+2024-01-05 15:32:57,013 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_4257f9e333dc978e7819.png
+2024-01-05 15:32:57,014 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_30b89b3c42d8315b86b3.png
+2024-01-05 15:32:57,015 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_5ddb7177b49db7b98cab.png
+2024-01-05 15:32:57,015 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_aac0bf4635419285aac3.png
+2024-01-05 15:32:57,016 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_993618f6ee4e83d9acfb.png
+2024-01-05 15:32:57,016 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_e660efc1ee4f57983683.png
+2024-01-05 15:32:57,017 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_790e39619f8a04e99191.png
+2024-01-05 15:32:57,018 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_d183fa16899ecd44cd97.png
+2024-01-05 15:32:57,018 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_43c23a2a85388c3b2200.png
+2024-01-05 15:32:57,019 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_2230818706f4b2b78c58.png
+2024-01-05 15:32:57,019 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_4663d423d7b63d2c475f.png
+2024-01-05 15:32:57,020 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images
+2024-01-05 15:32:57,025 INFO    wandb-upload_36:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/wi1btxdy-media/images/generated_17_a235d3989255efb38e29.png
+2024-01-05 15:32:57,081 INFO    wandb-upload_34:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/0bb61mel-media/images/generated_17_792e5b2155a4f2208f03.png
+2024-01-05 15:32:57,106 INFO    wandb-upload_38:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/1goewbve-media/images/generated_17_e9cc9eabae5c451e3b38.png
+2024-01-05 15:32:57,130 INFO    wandb-upload_42:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/78w4atyv-media/images/generated_17_7d490cfe8cccad2101bf.png
+2024-01-05 15:32:57,142 INFO    wandb-upload_0:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/firsl5x5-media/images/generated_17_5ddb7177b49db7b98cab.png
+2024-01-05 15:32:57,143 INFO    wandb-upload_39:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/3j7ip9ua-media/images/generated_17_4257f9e333dc978e7819.png
+2024-01-05 15:32:57,160 INFO    wandb-upload_43:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/pcs978vu-media/images/generated_17_92762c805896b95dce03.png
+2024-01-05 15:32:57,169 INFO    wandb-upload_32:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/sgvhg1g7-media/images/generated_17_d3f30ed9092a53a8e4c3.png
+2024-01-05 15:32:57,184 INFO    wandb-upload_41:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/4i3cjk58-media/images/generated_17_f4e3c27f2ead1bd19906.png
+2024-01-05 15:32:57,194 INFO    wandb-upload_40:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/xtffbaoh-media/images/generated_17_2230818706f4b2b78c58.png
+2024-01-05 15:32:57,209 INFO    wandb-upload_1:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/wzu308n7-media/images/original_15_a19ce0528b1bb2adce22.png
+2024-01-05 15:32:57,250 INFO    wandb-upload_30:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/foagbleh-media/images/generated_17_9e21c14a246db2c94666.png
+2024-01-05 15:32:57,255 INFO    wandb-upload_33:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/w4l57zuz-media/images/generated_17_e660efc1ee4f57983683.png
+2024-01-05 15:32:57,257 INFO    wandb-upload_31:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/s0oey04v-media/images/generated_17_66d3b443b8e8e6cb77ad.png
+2024-01-05 15:32:57,269 INFO    wandb-upload_3:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/9hkfg8i5-media/images/original_15_f659a229c23d487b5c9c.png
+2024-01-05 15:32:57,276 INFO    wandb-upload_11:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/d7ubz35t-media/images/original_15_d9e6918425be5a764038.png
+2024-01-05 15:32:57,278 INFO    wandb-upload_35:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/57wnwl7w-media/images/generated_17_7ac1eb6f3209cbb6c47f.png
+2024-01-05 15:32:57,287 INFO    wandb-upload_37:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/hdaydtar-media/images/generated_17_aac0bf4635419285aac3.png
+2024-01-05 15:32:57,335 INFO    wandb-upload_7:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/grap1akb-media/images/original_15_6264129da1c12245516a.png
+2024-01-05 15:32:57,341 INFO    wandb-upload_5:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/bukniicx-media/images/original_15_d6119a004a4a6ba7dfba.png
+2024-01-05 15:32:57,370 INFO    wandb-upload_12:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/p9lkg9pv-media/images/original_15_6e9cd629d6460d28e805.png
+2024-01-05 15:32:57,382 INFO    wandb-upload_2:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/uib870ui-media/images/original_15_cf2a546bcb2ce04e9c27.png
+2024-01-05 15:32:57,460 INFO    wandb-upload_13:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/1k37otpu-media/images/original_15_ffb2c8628e4252b4915f.png
+2024-01-05 15:32:57,465 INFO    wandb-upload_9:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/sr249pm3-media/images/original_15_ddba36420163acae2115.png
+2024-01-05 15:32:57,470 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 8
+2024-01-05 15:32:57,472 INFO    wandb-upload_6:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/1pux9k53-media/images/original_15_de352845fd202b43e1ae.png
+2024-01-05 15:32:57,477 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:57,498 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-05 15:32:57,500 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:57,501 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-05 15:32:57,501 INFO    SenderThread:181104 [job_builder.py:build():298] Attempting to build job artifact
+2024-01-05 15:32:57,502 INFO    wandb-upload_14:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/jstdscyb-media/images/original_15_b85b026dac3aa4ebd4f1.png
+2024-01-05 15:32:57,504 INFO    wandb-upload_29:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/eo4stu9m-media/images/original_15_9c1d34e1772c67cdf331.png
+2024-01-05 15:32:57,509 INFO    SenderThread:181104 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-01-05 15:32:57,529 INFO    SenderThread:181104 [job_builder.py:build():404] adding wandb-job metadata file
+2024-01-05 15:32:57,537 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-05 15:32:57,538 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 9
+2024-01-05 15:32:57,539 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: poll_exit
+2024-01-05 15:32:57,539 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:57,539 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-05 15:32:57,539 DEBUG   SenderThread:181104 [sender.py:send():382] send: artifact
+2024-01-05 15:32:57,553 INFO    wandb-upload_21:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/mxoxf4uk-media/images/original_15_68d4407f1ee77983e6f9.png
+2024-01-05 15:32:57,571 INFO    wandb-upload_15:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/x7vducvh-media/images/original_15_4daa51686e7c528d0e3e.png
+2024-01-05 15:32:57,599 INFO    wandb-upload_10:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/hybaog6w-media/images/original_15_35194f59a5d73c127b7c.png
+2024-01-05 15:32:57,604 INFO    wandb-upload_24:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/j9xhvb0l-media/images/reconstructed_16_78be8e05dc577136d553.png
+2024-01-05 15:32:57,687 INFO    wandb-upload_23:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/tfgcllp4-media/images/reconstructed_16_5725e18d5cfc79d86b40.png
+2024-01-05 15:32:57,688 INFO    wandb-upload_25:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/mzcss2wj-media/images/reconstructed_16_8ef82a746fcf8c262e9f.png
+2024-01-05 15:32:57,700 INFO    wandb-upload_8:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/pqrdy8yx-media/images/reconstructed_16_61f362d5a68cae3fdfcf.png
+2024-01-05 15:32:57,712 INFO    wandb-upload_17:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/yq1j3w8m-media/images/reconstructed_16_744989fece19b15a6ca4.png
+2024-01-05 15:32:57,719 INFO    wandb-upload_26:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/gdkyoj84-media/images/reconstructed_16_ae3160149d54ba0bf669.png
+2024-01-05 15:32:57,736 INFO    wandb-upload_19:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/vsp5q92i-media/images/reconstructed_16_6d87d6297c4b94e9c124.png
+2024-01-05 15:32:57,737 INFO    wandb-upload_4:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/a89ueaz4-media/images/reconstructed_16_37ca756836ec6553205f.png
+2024-01-05 15:32:57,754 INFO    wandb-upload_16:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/msrojue0-media/images/reconstructed_16_ca4f7c7e9e1bb7d46554.png
+2024-01-05 15:32:57,755 INFO    wandb-upload_27:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/i1neye1s-media/images/generated_17_a235d3989255efb38e29.png
+2024-01-05 15:32:57,814 INFO    wandb-upload_34:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/5cn3vwlr-media/images/reconstructed_16_790e39619f8a04e99191.png
+2024-01-05 15:32:57,841 INFO    wandb-upload_18:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/pgpgimm3-media/images/reconstructed_16_43c23a2a85388c3b2200.png
+2024-01-05 15:32:57,849 INFO    wandb-upload_38:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/ihyoz3bq-media/images/reconstructed_16_d183fa16899ecd44cd97.png
+2024-01-05 15:32:57,851 INFO    wandb-upload_28:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/owcqlhbg-media/images/reconstructed_16_30b89b3c42d8315b86b3.png
+2024-01-05 15:32:57,854 INFO    wandb-upload_36:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/ztos67mw-media/images/reconstructed_16_993618f6ee4e83d9acfb.png
+2024-01-05 15:32:57,868 INFO    wandb-upload_0:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/kv5re1kv-media/images/generated_17_e9cc9eabae5c451e3b38.png
+2024-01-05 15:32:57,884 INFO    wandb-upload_22:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/qh4wgm1e-media/images/generated_17_792e5b2155a4f2208f03.png
+2024-01-05 15:32:57,910 INFO    wandb-upload_42:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/mg03g712-media/images/generated_17_7d490cfe8cccad2101bf.png
+2024-01-05 15:32:57,945 INFO    wandb-upload_20:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/c871kcfi-media/images/reconstructed_16_4663d423d7b63d2c475f.png
+2024-01-05 15:32:57,982 INFO    wandb-upload_11:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/ge0d2ma4-media/images/generated_17_d3f30ed9092a53a8e4c3.png
+2024-01-05 15:32:57,986 INFO    wandb-upload_32:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/xhbgwhb5-media/images/generated_17_9e21c14a246db2c94666.png
+2024-01-05 15:32:58,001 INFO    Thread-12 :181104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:58,010 INFO    wandb-upload_1:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/9adhyx3f-media/images/generated_17_f4e3c27f2ead1bd19906.png
+2024-01-05 15:32:58,018 INFO    wandb-upload_30:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/43hr83u3-media/images/generated_17_92762c805896b95dce03.png
+2024-01-05 15:32:58,037 INFO    wandb-upload_33:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/unmxhdzr-media/images/generated_17_2230818706f4b2b78c58.png
+2024-01-05 15:32:58,063 INFO    wandb-upload_41:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/6mx07zvt-media/images/generated_17_7ac1eb6f3209cbb6c47f.png
+2024-01-05 15:32:58,071 INFO    wandb-upload_40:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/o1jsypvh-media/images/generated_17_4257f9e333dc978e7819.png
+2024-01-05 15:32:58,117 INFO    wandb-upload_43:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/w75vdb08-media/images/generated_17_e660efc1ee4f57983683.png
+2024-01-05 15:32:58,160 INFO    wandb-upload_3:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/e1uavd6m-media/images/generated_17_aac0bf4635419285aac3.png
+2024-01-05 15:32:58,201 INFO    wandb-upload_39:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/n88c6l21-media/images/generated_17_5ddb7177b49db7b98cab.png
+2024-01-05 15:32:58,232 INFO    wandb-upload_31:181104 [upload_job.py:push():131] Uploaded file /tmp/tmpresxf6u9wandb/gfap59ke-media/images/generated_17_66d3b443b8e8e6cb77ad.png
+2024-01-05 15:32:58,461 INFO    SenderThread:181104 [sender.py:send_artifact():1470] sent artifact job-https___github.com_Lucasmogsan_dtu_mlops_4_profiling_logging.git_vae_mnist_wandb.py - {'id': 'QXJ0aWZhY3Q6NjgyNTUzNzAx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNzcwMzQ2NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjgyNTUzNzAx', 'versionIndex': 4}}}
+2024-01-05 15:32:58,461 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:58,461 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-05 15:32:58,462 INFO    SenderThread:181104 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-05 15:32:58,538 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-05 15:32:59,005 INFO    SenderThread:181104 [dir_watcher.py:finish():388] scan: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files
+2024-01-05 15:32:59,006 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/requirements.txt requirements.txt
+2024-01-05 15:32:59,006 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/conda-environment.yaml conda-environment.yaml
+2024-01-05 15:32:59,007 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json wandb-summary.json
+2024-01-05 15:32:59,019 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-metadata.json wandb-metadata.json
+2024-01-05 15:32:59,019 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/config.yaml config.yaml
+2024-01-05 15:32:59,022 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log output.log
+2024-01-05 15:32:59,036 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_5ddb7177b49db7b98cab.png media/images/generated_17_5ddb7177b49db7b98cab.png
+2024-01-05 15:32:59,036 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_61f362d5a68cae3fdfcf.png media/images/reconstructed_16_61f362d5a68cae3fdfcf.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_744989fece19b15a6ca4.png media/images/reconstructed_16_744989fece19b15a6ca4.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_30b89b3c42d8315b86b3.png media/images/reconstructed_16_30b89b3c42d8315b86b3.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_ae3160149d54ba0bf669.png media/images/reconstructed_16_ae3160149d54ba0bf669.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_9c1d34e1772c67cdf331.png media/images/original_15_9c1d34e1772c67cdf331.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_6d87d6297c4b94e9c124.png media/images/reconstructed_16_6d87d6297c4b94e9c124.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_f4e3c27f2ead1bd19906.png media/images/generated_17_f4e3c27f2ead1bd19906.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_37ca756836ec6553205f.png media/images/reconstructed_16_37ca756836ec6553205f.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_6264129da1c12245516a.png media/images/original_15_6264129da1c12245516a.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_e660efc1ee4f57983683.png media/images/generated_17_e660efc1ee4f57983683.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_66d3b443b8e8e6cb77ad.png media/images/generated_17_66d3b443b8e8e6cb77ad.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_35194f59a5d73c127b7c.png media/images/original_15_35194f59a5d73c127b7c.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_ddba36420163acae2115.png media/images/original_15_ddba36420163acae2115.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_78be8e05dc577136d553.png media/images/reconstructed_16_78be8e05dc577136d553.png
+2024-01-05 15:32:59,037 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_ca4f7c7e9e1bb7d46554.png media/images/reconstructed_16_ca4f7c7e9e1bb7d46554.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_d183fa16899ecd44cd97.png media/images/reconstructed_16_d183fa16899ecd44cd97.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_e9cc9eabae5c451e3b38.png media/images/generated_17_e9cc9eabae5c451e3b38.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_792e5b2155a4f2208f03.png media/images/generated_17_792e5b2155a4f2208f03.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_4257f9e333dc978e7819.png media/images/generated_17_4257f9e333dc978e7819.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_d3f30ed9092a53a8e4c3.png media/images/generated_17_d3f30ed9092a53a8e4c3.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_68d4407f1ee77983e6f9.png media/images/original_15_68d4407f1ee77983e6f9.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_cf2a546bcb2ce04e9c27.png media/images/original_15_cf2a546bcb2ce04e9c27.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_5725e18d5cfc79d86b40.png media/images/reconstructed_16_5725e18d5cfc79d86b40.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_7d490cfe8cccad2101bf.png media/images/generated_17_7d490cfe8cccad2101bf.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_790e39619f8a04e99191.png media/images/reconstructed_16_790e39619f8a04e99191.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_d9e6918425be5a764038.png media/images/original_15_d9e6918425be5a764038.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_a235d3989255efb38e29.png media/images/generated_17_a235d3989255efb38e29.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_4663d423d7b63d2c475f.png media/images/reconstructed_16_4663d423d7b63d2c475f.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_4daa51686e7c528d0e3e.png media/images/original_15_4daa51686e7c528d0e3e.png
+2024-01-05 15:32:59,038 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_b85b026dac3aa4ebd4f1.png media/images/original_15_b85b026dac3aa4ebd4f1.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_43c23a2a85388c3b2200.png media/images/reconstructed_16_43c23a2a85388c3b2200.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_aac0bf4635419285aac3.png media/images/generated_17_aac0bf4635419285aac3.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_ffb2c8628e4252b4915f.png media/images/original_15_ffb2c8628e4252b4915f.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_9e21c14a246db2c94666.png media/images/generated_17_9e21c14a246db2c94666.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_2230818706f4b2b78c58.png media/images/generated_17_2230818706f4b2b78c58.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_8ef82a746fcf8c262e9f.png media/images/reconstructed_16_8ef82a746fcf8c262e9f.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_a19ce0528b1bb2adce22.png media/images/original_15_a19ce0528b1bb2adce22.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_6e9cd629d6460d28e805.png media/images/original_15_6e9cd629d6460d28e805.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_d6119a004a4a6ba7dfba.png media/images/original_15_d6119a004a4a6ba7dfba.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_7ac1eb6f3209cbb6c47f.png media/images/generated_17_7ac1eb6f3209cbb6c47f.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_f659a229c23d487b5c9c.png media/images/original_15_f659a229c23d487b5c9c.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/generated_17_92762c805896b95dce03.png media/images/generated_17_92762c805896b95dce03.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/original_15_de352845fd202b43e1ae.png media/images/original_15_de352845fd202b43e1ae.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [dir_watcher.py:finish():402] scan save: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/media/images/reconstructed_16_993618f6ee4e83d9acfb.png media/images/reconstructed_16_993618f6ee4e83d9acfb.png
+2024-01-05 15:32:59,039 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 10
+2024-01-05 15:32:59,040 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: poll_exit
+2024-01-05 15:32:59,040 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:59,040 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-05 15:32:59,040 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:59,040 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-05 15:32:59,040 INFO    SenderThread:181104 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-05 15:32:59,485 INFO    wandb-upload_35:181104 [upload_job.py:push():131] Uploaded file /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/requirements.txt
+2024-01-05 15:32:59,487 INFO    wandb-upload_37:181104 [upload_job.py:push():131] Uploaded file /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/conda-environment.yaml
+2024-01-05 15:32:59,488 INFO    wandb-upload_5:181104 [upload_job.py:push():131] Uploaded file /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/output.log
+2024-01-05 15:32:59,518 INFO    wandb-upload_13:181104 [upload_job.py:push():131] Uploaded file /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/config.yaml
+2024-01-05 15:32:59,539 INFO    wandb-upload_7:181104 [upload_job.py:push():131] Uploaded file /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/files/wandb-summary.json
+2024-01-05 15:32:59,540 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-05 15:32:59,541 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: poll_exit
+2024-01-05 15:32:59,740 INFO    Thread-11 (_thread_body):181104 [sender.py:transition_state():617] send defer: 11
+2024-01-05 15:32:59,741 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:59,741 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-05 15:32:59,742 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:59,742 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-05 15:32:59,743 INFO    SenderThread:181104 [file_pusher.py:join():181] waiting for file pusher
+2024-01-05 15:32:59,743 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 12
+2024-01-05 15:32:59,743 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:32:59,743 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-05 15:32:59,744 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:32:59,744 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-05 15:32:59,744 INFO    SenderThread:181104 [file_stream.py:finish():595] file stream finish called
+2024-01-05 15:32:59,999 INFO    SenderThread:181104 [file_stream.py:finish():599] file stream finish is done
+2024-01-05 15:32:59,999 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 13
+2024-01-05 15:32:59,999 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:33:00,000 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-05 15:33:00,000 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:33:00,000 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-05 15:33:00,001 INFO    SenderThread:181104 [sender.py:transition_state():617] send defer: 14
+2024-01-05 15:33:00,001 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: defer
+2024-01-05 15:33:00,001 INFO    HandlerThread:181104 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-05 15:33:00,002 DEBUG   SenderThread:181104 [sender.py:send():382] send: final
+2024-01-05 15:33:00,003 DEBUG   SenderThread:181104 [sender.py:send():382] send: footer
+2024-01-05 15:33:00,003 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: defer
+2024-01-05 15:33:00,003 INFO    SenderThread:181104 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-05 15:33:00,004 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-05 15:33:00,005 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: poll_exit
+2024-01-05 15:33:00,007 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-05 15:33:00,007 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: server_info
+2024-01-05 15:33:00,009 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-05 15:33:00,013 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-05 15:33:00,014 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-05 15:33:00,014 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: poll_exit
+2024-01-05 15:33:00,015 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: server_info
+2024-01-05 15:33:00,021 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: job_info
+2024-01-05 15:33:00,202 DEBUG   SenderThread:181104 [sender.py:send_request():409] send_request: job_info
+2024-01-05 15:33:00,202 INFO    MainThread:181104 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-01-05 15:33:00,204 INFO    MainThread:181104 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-01-05 15:33:00,205 INFO    MainThread:181104 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-01-05 15:33:00,206 DEBUG   HandlerThread:181104 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-05 15:33:00,206 INFO    HandlerThread:181104 [handler.py:finish():866] shutting down handler
+2024-01-05 15:33:01,022 INFO    WriterThread:181104 [datastore.py:close():294] close: /home/lucas/dtu_mlops_4_profiling_logging/wandb/run-20240105_153223-7764xou0/run-7764xou0.wandb
+2024-01-05 15:33:01,202 INFO    SenderThread:181104 [sender.py:finish():1548] shutting down sender
+2024-01-05 15:33:01,203 INFO    SenderThread:181104 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-05 15:33:01,203 INFO    SenderThread:181104 [file_pusher.py:join():181] waiting for file pusher

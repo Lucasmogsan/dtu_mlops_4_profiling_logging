@@ -59,6 +59,8 @@ tensorboard --logdir=./log
 # Logging
 Following [These tutorials](https://skaftenicki.github.io/dtu_mlops/s4_debugging_and_logging/logging/)
 
-## Application logging - using ```logging```
+## Application logging - using [logging](https://docs.python.org/3/library/logging.html)
+
+
 
 ## Experiment logging - using [wandb](https://wandb.ai/site)

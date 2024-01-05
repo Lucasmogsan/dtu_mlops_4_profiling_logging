@@ -1,0 +1,6 @@
+ERROR 2024-01-05 14:56:52,761 [root:logger_python_example.py:<module>:64]
+There's been a mistake with the process.
+
+CRITICAL 2024-01-05 14:56:52,767 [root:logger_python_example.py:<module>:65]
+There is something terribly wrong and process may terminate.
+
